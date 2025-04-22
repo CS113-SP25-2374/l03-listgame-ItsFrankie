@@ -2,7 +2,7 @@ package cs113.listGame.resources;
 
 import cs113.listGame.gamecore.GameObject;
 
-import java.util.Iterator
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 

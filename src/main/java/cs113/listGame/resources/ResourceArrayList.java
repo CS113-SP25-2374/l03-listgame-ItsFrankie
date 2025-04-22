@@ -56,7 +56,7 @@ public class ResourceArrayList implements ResourceList
     {
         boolean found = false;
         Iterator<ResourceObject> iterator0 = resources.iterator();
-        while (iterator0.next)
+        while (iterator0.hasNext())
         {
             if (iterator0.next().equals(resource0))
             {
@@ -72,7 +72,7 @@ public class ResourceArrayList implements ResourceList
     @Override
     public void follow(GameObject leader) 
     {
-        Iterator<ResourceObject> iterator0 = resources.iterator0();
+        Iterator<ResourceObject> iterator0 = resources.iterator();
         while(iterator0.hasNext())
         {
             ResourceObject resource = iterator0.next();

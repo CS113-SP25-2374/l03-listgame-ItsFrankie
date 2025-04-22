@@ -1,6 +1,10 @@
 package cs113.listGame.enemies;
 
 import cs113.listGame.behaviors.Behavior;
+import cs113.listGame.behaviors.FollowObject;
+import cs113.listGame.behaviors.MoveToPoint;
+import cs113.listGame.behaviors.Waiting;
+import cs113.listGame.gamecore.GameController;
 import cs113.listGame.gamecore.GameObject;
 import cs113.listGame.resources.ResourceObject;
 import javafx.scene.image.ImageView;
@@ -24,7 +28,7 @@ public class EnemyArrayList extends EnemyObject
         behaviors.add(new MoveToPoint(this, 3000, destination1));
         behaviors.add(new Waiting(this, 2000));
         behaviors.add(new Waiting(this, 2000));
-        behaviors.add(new FollowObject(this, 3000, GameController.getPlayer().getPlayer()));
+        behaviors.add(new FollowObject(this, 3000, GameController.getPlayer()));
         behaviors.add(new MoveToPoint(this, 3000, this.getWorldCenter()));
     }
 
