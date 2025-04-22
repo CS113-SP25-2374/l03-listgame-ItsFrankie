@@ -8,13 +8,11 @@ import javafx.geometry.Point2D;
 import javafx.scene.image.ImageView;
 
 public class PlayerObject extends GameObject {
-    ResourceList resources = new ResourceArray();
+    ResourceList resources = new ResourceArrayList();
 
-    public PlayerObject(ImageView imageView) {
+    public PlayerObject(ImageView imageView, Point2D location) {
         super(imageView);
-
-        //Point2D location
-        //setPosition(location);
+        setPosition(location);
     }
 
     @Override
