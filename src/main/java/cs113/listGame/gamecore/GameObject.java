@@ -43,6 +43,12 @@ public abstract class GameObject {
         return getBounds().intersects(otherObject.getBounds());
     }
 
+    /**
+     * Handles a collision with another object
+     * @param otherObject the object that was collided with
+     */
+    public abstract void handleCollision(GameObject otherObject);
+
     public boolean moveTowards(Point2D point) {
         Point2D toVector = point.subtract(this.getWorldCenter());
 
@@ -63,11 +69,7 @@ public abstract class GameObject {
         return moveTowards(otherObject.echoPosition);
     }
 
-    /**
-     * Handles a collision with another object
-     * @param otherObject the object that was collided with
-     */
-    public abstract void handleCollision(GameObject otherObject);
+
 
     /**
      * Performs game logic for the character

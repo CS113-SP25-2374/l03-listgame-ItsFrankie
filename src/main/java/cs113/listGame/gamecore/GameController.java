@@ -1,4 +1,4 @@
-package cs113.listGame.gamecore;
+ package cs113.listGame.gamecore;
 
 import cs113.listGame.enemies.*;
 import cs113.listGame.helpers.JavaFXHelper;
@@ -19,6 +19,7 @@ import java.util.Random;
 
 public class GameController {
     static GameController instance;
+    public static GameController getInstance() { return instance; }
     public static void debugText(String text) { instance.debugLabel.setText(text); }
     public static void scoreResource(ResourceObject resource) { instance.completeScore(resource); }
 

@@ -15,7 +15,8 @@ public abstract class Behavior {
 
     public GameObject getGameObject() { return this.gameObject; }
 
-    protected Behavior(GameObject gameObject, long behaviorMillis) {
+    protected Behavior(GameObject gameObject, long behaviorMillis) 
+    {
         this.gameObject = gameObject;
         this.behaviorTotalTime = TimeUnit.MILLISECONDS.toNanos(behaviorMillis);
     }
